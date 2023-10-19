@@ -1,28 +1,41 @@
 package prime;
-
+import java.util.*;
 public class ArrayDecending {
 
 	public static void main(String[] args) {
-		
-		int[] arr= {10,20,30,40,50};
-		int temp;
-		for(int i=0;i<arr.length;i++)
-		{
-			for(int j=i+1;j<arr.length;j++)
-			{
-				if(arr[i]<arr[j])
-				{
-					temp=arr[i];
-					arr[i]=arr[j];
-					arr[j]=temp;
-					
-				}
-				}
-			for( i=0;i<arr.length;i++)
-			{
-			System.out.println(arr[i]);
+
+				// Initializing the array
+				int array[] = { 1, 2, 3, 4, 5, 6 };
+
+				// Sorting the array in ascending order
+				Arrays.sort(array);
+
+				// Reversing the array
+				reverse(array);
+
+				// Printing the elements
+				System.out.println(Arrays.toString(array));
 			}
-			System.out.println(arr[arr.length-1]);
+
+			public static void reverse(int[] array)
+			{
+
+				// Length of the array
+				int n = array.length;
+
+				// Swapping the first half elements with last half
+				// elements
+				for (int i = 0; i < n / 2; i++) {
+
+					// Storing the first half elements temporarily
+					int temp = array[i];
+
+					// Assigning the first half to the last half
+					array[i] = array[n - i - 1];
+
+					// Assigning the last half to the first half
+					array[n - i - 1] = temp;
+				}
+			}
 		}
-	}
-}
+
