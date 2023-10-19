@@ -1,21 +1,18 @@
 package prime;
 
 public class ArrayMaxOfTwoEle {
+	// Java program to demonstrate the use of max() function 
+	// when two double data-type numbers are 
+	// passed as arguments 
+	
 
-	public static void main(String[] args) {
-		int[] a= {5,8,7,4};
-		int n=a.length;
-		int diff,greatest_diff;
-		greatest_diff=0;
-		int a1=0,a2=0;
-		for(int i=0;i<n;i++)
-		{
-			for(int j=i+1;j<n;j++)
-			{
-				diff=math.a
-			}
-		}
+		public static void main(String args[]) 
+		{ 
+			double a = 12.123; 
+			double b = 12.456; 
 
-	}
+			// prints the maximum of two numbers 
+			System.out.println(Math.max(a, b)); 
+		} 
+	} 
 
-}

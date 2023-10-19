@@ -4,7 +4,6 @@ public class StrongNo {
 
 	public static void main(String[] args) {
 		int num=145,sum=0;
-		int temp=num;
 		int fact=1;
 		while(num>0)
 		{
